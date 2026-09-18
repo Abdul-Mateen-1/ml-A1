@@ -20,3 +20,5 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run unit tests
         run: pytest -v
+      - name: Lint code
+        run: ruff check .
