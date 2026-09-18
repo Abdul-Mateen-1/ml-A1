@@ -19,7 +19,7 @@ def predict():
     data = request.get_json()
     value = float(data["value"])
     # Dummy ML prediction for teaching
-    prediction = value * 2
+    prediction = value * 10
     return jsonify(
         {"input": value, "prediction": prediction, "model_version": MODEL_VERSION}
     )
